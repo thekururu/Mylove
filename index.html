@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>💖 Cuaderno Secreto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="login">
+    <h1>💌 Cuaderno Secreto</h1>
+    <label for="nombre">Ingresa tu nombre:</label><br>
+    <input type="text" id="nombre" placeholder="Tu nombre"><br><br>
+
+    <label for="password">Contraseña:</label><br>
+    <input type="password" id="password" placeholder="Ingresa la contraseña"><br><br>
+
+    <button onclick="verificarAcceso()">Entrar</button>
+    <p id="mensaje-error"></p>
+  </div>
+
+  <div class="container oculto" id="cuaderno">
+    <h2>💖 Bienvenido, <span id="nombreMostrado"></span> 💖</h2>
+    <p>Este es tu espacio secreto lleno de amor y pensamientos lindos:</p>
+    <div class="cartas">
+      <div class="carta">❤️ "Eres una luz en la vida de quienes te rodean."</div>
+      <div class="carta">🌸 "Cada día contigo es un poema que aún no se ha escrito."</div>
+      <div class="carta">💌 "Tu sonrisa es la mejor parte del día."</div>
+      <div class="carta">🌈 "Nunca olvides lo valioso que eres para el mundo."</div>
+      <div class="carta">🌟 "El amor que das regresa a ti multiplicado."</div>
+    </div>
+    <button onclick="salir()">Salir</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
