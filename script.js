@@ -1,5 +1,5 @@
 ﻿function verificarAcceso() {
-  const passwordCorrecta = "23012012";
+  const passwordCorrecta = "23012008";
   const inputPassword = document.getElementById("password").value;
   const nombre = document.getElementById("nombre").value.trim();
   const errorMensaje = document.getElementById("mensaje-error");
@@ -21,3 +21,4 @@
 function salir() {
   location.reload();
 }
+
